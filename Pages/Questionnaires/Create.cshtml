@@ -1,0 +1,54 @@
+﻿@page
+@model ReviewSite.Pages.Questionnaires.CreateModel
+
+<form method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary pl-3">Fill Out Questionnaire</h2>
+			<hr />
+		</div>
+		<div asp-validation-summary="All"></div>
+		<div class="mb-3">
+			<label asp-for="Questionnaire.Name"></label>
+			<input asp-for="Questionnaire.Name" class="form-control" />
+			<span asp-validation-for="Questionnaire.Name" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Questionnaire.BirthDate"></label>
+			<input asp-for="Questionnaire.BirthDate" class="form-control" />
+			<span asp-validation-for="Questionnaire.BirthDate" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Questionnaire.Instagram"></label>
+			<input asp-for="Questionnaire.Instagram" class="form-control" />
+			<span asp-validation-for="Questionnaire.Instagram" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Questionnaire.Telegram"></label>
+			<input asp-for="Questionnaire.Telegram" class="form-control" />
+			<span asp-validation-for="Questionnaire.Telegram" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Questionnaire.Discord"></label>
+			<input asp-for="Questionnaire.Discord" class="form-control" />
+			<span asp-validation-for="Questionnaire.Discord" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Questionnaire.Phone"></label>
+			<input asp-for="Questionnaire.Phone" class="form-control" />
+			<span asp-validation-for="Questionnaire.Phone" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Questionnaire.DescribeYourself"></label>
+			<input asp-for="Questionnaire.DescribeYourself" class="form-control" />
+			<span asp-validation-for="Questionnaire.DescribeYourself" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Questionnaire.FirstImpression"></label>
+			<input asp-for="Questionnaire.FirstImpression" class="form-control" />
+			<span asp-validation-for="Questionnaire.FirstImpression" class="text-danger"></span>
+		</div>
+		<button type="submit" class="btn btn-primary" style="width:150px;">Create</button>
+		<a asp-page="Index" class="btn btn-secondary" style="width:150px;">Back to List</a>
+	</div>
+</form>
